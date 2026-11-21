@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+__pycache__/
+venv/
+.venv/
+api/static/map*.html
+*.log

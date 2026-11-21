@@ -1,0 +1,212 @@
+.mapRoot {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+.mapContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mapboxgl-popup-close-button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  overflow: visible !important;
+  max-height: unset !important;
+  font-size: 10px !important;
+  padding: 2px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.hide {
+  display: none;
+}
+
+.startBtn {
+  background-color: #1784ebe4;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none; /* Add this */
+  color: white; /* Add this for better text visibility */
+}
+
+.countriesStartBtn {
+  background-color: #1784ebe4;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none; /* Add this */
+  color: white; /* Add this for better text visibility */
+}
+
+.popupStyles {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  overflow: visible !important;
+  max-height: unset !important;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  text-align: center;
+}
+
+.correct {
+  background-color: #10b526;
+  color: white;
+}
+
+.incorrect {
+  background-color: #ff0000;
+  color: white;
+}
+
+.messageStyles {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nextButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restartButton {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.restartButtonInner {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.restartButtonInner:hover {
+  background-color: #e6112ae0;
+  transform: scale(1.2);
+}
+
+.mapRoot .mapboxgl-popup {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  overflow: visible !important;
+  max-height: unset !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.mapRoot .mapboxgl-popup-content {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  background: none !important;
+  font-size: 20px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold !important;
+  overflow: visible !important;
+  max-height: unset !important;
+  text-align: center !important;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.questionScoreContainer {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  overflow: visible !important;
+  max-height: unset !important;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  z-index: 1000;
+}
+
+.questionContainer {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: black;
+  overflow: visible !important;
+  max-height: unset !important;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.skipButton, .submitButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.skipButton {
+  background-color: rgb(111, 111, 111);
+  color: white;
+  border-radius: 5px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .popupStyles {
+    top: 60px;
+    left: 50%;
+  }
+}
